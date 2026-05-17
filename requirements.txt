@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+plotly
+ccxt
+python-dotenv
+requests
+openai
+pytz
+pillow
+ta
