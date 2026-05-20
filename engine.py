@@ -162,13 +162,42 @@ class DemoAccount:
         return curve
 
 
-# Risk defaults per strategy (embedded to avoid import issues)
 STRATEGY_RISK_DEFAULTS = {
-    "Quantum Scalper":  {"risk_pct":5.0,"leverage":20,"atr_tp_mult":2.5,"atr_sl_mult":0.8,"tp_pct":4.0,"sl_pct":1.0,"trailing_stop":True,"trailing_atr_mult":1.5,"trailing_activation_pct":0.8,"daily_loss_limit_pct":15.0,"max_consecutive_losses":8},
-    "NEXUS SMC Elite":  {"risk_pct":6.0,"leverage":20,"atr_tp_mult":3.5,"atr_sl_mult":1.0,"tp_pct":5.0,"sl_pct":1.2,"trailing_stop":True,"trailing_atr_mult":2.0,"trailing_activation_pct":1.0,"daily_loss_limit_pct":15.0,"max_consecutive_losses":8},
-    "Titan Trend":      {"risk_pct":4.0,"leverage":15,"atr_tp_mult":4.0,"atr_sl_mult":1.2,"tp_pct":6.0,"sl_pct":1.5,"trailing_stop":True,"trailing_atr_mult":2.5,"trailing_activation_pct":1.5,"daily_loss_limit_pct":12.0,"max_consecutive_losses":6},
-    "Phoenix Reversal": {"risk_pct":3.5,"leverage":12,"atr_tp_mult":3.5,"atr_sl_mult":1.0,"tp_pct":5.0,"sl_pct":1.2,"trailing_stop":True,"trailing_atr_mult":2.0,"trailing_activation_pct":1.2,"daily_loss_limit_pct":12.0,"max_consecutive_losses":5},
-    "Iron Shield":      {"risk_pct":2.5,"leverage":10,"atr_tp_mult":4.0,"atr_sl_mult":1.0,"tp_pct":4.0,"sl_pct":1.0,"trailing_stop":True,"trailing_atr_mult":2.5,"trailing_activation_pct":1.5,"daily_loss_limit_pct":10.0,"max_consecutive_losses":4},
+
+    "Quantum Scalper": {
+        "risk_pct": 0.5,
+        "leverage": 3,
+        "atr_tp_mult": 5.0,
+        "atr_sl_mult": 2.5,
+    },
+
+    "NEXUS SMC Elite": {
+        "risk_pct": 0.7,
+        "leverage": 4,
+        "atr_tp_mult": 6.0,
+        "atr_sl_mult": 2.5,
+    },
+
+    "Titan Trend": {
+        "risk_pct": 0.8,
+        "leverage": 5,
+        "atr_tp_mult": 7.0,
+        "atr_sl_mult": 3.0,
+    },
+
+    "Phoenix Reversal": {
+        "risk_pct": 0.4,
+        "leverage": 3,
+        "atr_tp_mult": 4.5,
+        "atr_sl_mult": 2.5,
+    },
+
+    "Iron Shield": {
+        "risk_pct": 0.3,
+        "leverage": 2,
+        "atr_tp_mult": 4.0,
+        "atr_sl_mult": 2.0,
+    },
 }
 
 
