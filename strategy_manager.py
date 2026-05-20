@@ -47,3 +47,4 @@ class StrategyManager:
 
     def select(self, name):
         pass
+        print("strategy_manager loaded")
